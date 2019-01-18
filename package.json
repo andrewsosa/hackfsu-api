@@ -14,5 +14,9 @@
   "bugs": {
     "url": "https://github.com/HackFSU/api/issues"
   },
-  "homepage": "https://github.com/HackFSU/api#readme"
+  "homepage": "https://github.com/HackFSU/api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "just-api": "^1.2.4"
+  }
 }
