@@ -5,4 +5,4 @@
 TODO
 
 ### Requirements & Features:
-See the [issues](/issues) page.
+See the [issues](../../issues) page.
