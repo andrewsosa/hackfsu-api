@@ -5,4 +5,6 @@
 TODO
 
 ### Requirements & Features:
-See the [issues](../../issues) page.
+For TODO's, see the [issues](../../issues) page.
+
+For API routes, see [the docs](./docs/routes.md).
