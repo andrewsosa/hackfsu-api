@@ -1,0 +1,27 @@
+meta:
+  name: Hackathon Schedule
+configuration:
+  scheme: https
+  base_path: /api
+  # host: hackfsuapi-q7tezm7hx.now.sh
+  custom_configuration:
+    run_type: inline
+    inline:
+      function: !!js/function >
+        function() {
+          this.host = process.env.API_HOST
+        }
+
+specs:
+  - name: pull all schedule events
+    request:
+      path: /schedule
+      method: get
+    response:
+      status_code: 200
+      headers:
+        - name: content-type
+          value: !!js/regexp application/json
+      json_schema:
+        type: file
+        $ref: specs/schedule.schema.json
