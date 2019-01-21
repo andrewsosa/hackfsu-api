@@ -9,8 +9,8 @@
   ],
   "routes": [
     {
-      "src": "/api/updates",
-      "dest": "/api/updates/index.js"
+      "src": "/api/schedule",
+      "dest": "/api/schedule/index.js"
     }
   ]
 }
