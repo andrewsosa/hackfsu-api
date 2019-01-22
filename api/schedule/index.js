@@ -22,8 +22,8 @@ const parse = (record, fields) =>
 
 // Load the schedule using an async promise. By using a promise,
 // we force the response to wait for our result.
-const schedule = async () => {
-  return new Promise(resolve => {
+const schedule = async () =>
+  new Promise(resolve => {
     const payload = [];
     // Read from table
     base("Schedule")
@@ -43,7 +43,6 @@ const schedule = async () => {
         }
       );
   });
-};
 
 module.exports = async (req, res) => {
   send(res, 200, await schedule());
