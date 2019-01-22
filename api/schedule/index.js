@@ -29,12 +29,14 @@ const schedule = async () => {
     base("Schedule")
       .select()
       .eachPage(
+        // For each page:
         (records, next) => {
           records.forEach(rec => {
             payload.push(parse(rec, columns));
           });
           next();
         },
+        // On completion:
         err => {
           if (err) console.error(err);
           resolve(payload);

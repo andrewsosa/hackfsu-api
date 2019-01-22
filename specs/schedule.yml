@@ -1,16 +1,10 @@
 meta:
   name: Hackathon Schedule
 configuration:
-  scheme: https
+  scheme: http
+  host: localhost
+  port: 3000
   base_path: /api
-  # host: hackfsuapi-q7tezm7hx.now.sh
-  custom_configuration:
-    run_type: inline
-    inline:
-      function: !!js/function >
-        function() {
-          this.host = process.env.API_HOST
-        }
 
 specs:
   - name: pull all schedule events
